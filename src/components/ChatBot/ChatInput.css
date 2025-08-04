@@ -1,0 +1,75 @@
+.chat-input-container {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+}
+
+.chat-input {
+  width: 100%;
+  padding: 18px 25px;
+  border: 2px solid #FFB5A7;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(255, 255, 255, 0.8);
+  color: #8B5A3C;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  will-change: border-color, box-shadow, background-color;
+}
+
+.chat-input:focus {
+  border-color: #FF9A8B;
+  box-shadow: 0 0 20px rgba(255, 154, 139, 0.3);
+  background: rgba(255, 255, 255, 0.95);
+  outline: none;
+}
+
+.chat-input::placeholder {
+  color: #D2B48C;
+  font-style: italic;
+}
+
+.send-button {
+  background: linear-gradient(135deg, #FF9A8B, #FFB5A7);
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 8px 20px rgba(255, 154, 139, 0.3);
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  width: auto;
+  min-width: 120px;
+  align-self: center;
+  will-change: transform, box-shadow;
+}
+
+.send-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(255, 154, 139, 0.4);
+  background: linear-gradient(135deg, #FF8A80, #FF9A8B);
+}
+
+.send-button:active {
+  transform: translateY(0);
+}
+
+.send-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .chat-input-container {
+    gap: 12px;
+  }
+} 

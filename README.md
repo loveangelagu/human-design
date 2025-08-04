@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Human Design AI Guide
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, interactive AI chatbot designed to help users explore Human Design principles and their personal journey. Built with React and designed to integrate with ChatGPT API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Beautiful UI**: Stunning gradient design with animated bot avatar
+- **Interactive Chat**: Real-time messaging with typing indicators
+- **Responsive Design**: Works perfectly on desktop and mobile devices
+- **Accessible**: Built with accessibility best practices
+- **Scalable Architecture**: Clean component structure for easy expansion
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+src/
+├── components/
+│   └── ChatBot/
+│       ├── ChatBot.js          # Main chat interface component
+│       ├── ChatBot.css         # Main chat styling
+│       ├── BotAvatar.js        # Animated bot avatar component
+│       ├── BotAvatar.css       # Bot avatar styling
+│       ├── ChatInput.js        # Input field and send button
+│       └── ChatInput.css       # Input styling
+├── services/
+│   └── chatService.js          # API service layer for ChatGPT integration
+├── App.js                      # Main app component
+├── App.css                     # App-level styling
+└── index.css                   # Global styles
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Start the development server**:
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+3. **Open your browser** and navigate to `http://localhost:3000`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Future Development
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Phase 1: ChatGPT API Integration
+- [ ] Set up environment variables for API keys
+- [ ] Implement actual ChatGPT API calls
+- [ ] Add conversation context management
+- [ ] Implement message history persistence
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Phase 2: Enhanced Features
+- [ ] User authentication system
+- [ ] Personal Human Design chart integration
+- [ ] Conversation history and favorites
+- [ ] Export chat transcripts
 
-### `npm run eject`
+### Phase 3: Advanced AI Features
+- [ ] Personalized responses based on user's Human Design type
+- [ ] Voice input/output capabilities
+- [ ] Image generation for visual explanations
+- [ ] Multi-language support
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technical Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend**: React 19.1.1
+- **Styling**: CSS3 with custom animations
+- **Fonts**: Google Fonts (Poppins)
+- **Future Backend**: Node.js/Express (for API routes)
+- **Future AI**: OpenAI ChatGPT API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Design Principles
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project follows several key software design principles:
 
-## Learn More
+1. **Separation of Concerns**: UI components, business logic, and API calls are separated
+2. **Component Reusability**: Each component is designed to be reusable and maintainable
+3. **Service Layer Pattern**: API calls are abstracted through a service layer
+4. **Responsive Design**: Mobile-first approach with progressive enhancement
+5. **Accessibility**: Built with ARIA labels, keyboard navigation, and focus management
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.
