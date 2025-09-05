@@ -51,3 +51,11 @@ A beautiful, interactive AI chatbot designed to help users explore Human Design 
 - **Fonts**: Google Fonts (Poppins)
 - **Future Backend**: Node.js/Express (for API routes)
 - **Future AI**: OpenAI ChatGPT API
+
+## 🤝 Let's Connect
+
+I’m always open to feedback, collaborations, or new opportunities. Drop me a message or just say hi!
+
+- 📩 Email: [angelagu93@gmail.com](mailto:angelagu93@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/distilledbyangelagu](https://www.linkedin.com/in/distilledbyangelagu/)
+- 🌐 Website: [distilledbyangelagu.co/essays](https://distilledbyangelagu.co/)
