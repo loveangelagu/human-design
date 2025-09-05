@@ -58,4 +58,4 @@ I’m always open to feedback, collaborations, or new opportunities. Drop me a m
 
 - 📩 Email: [angelagu93@gmail.com](mailto:angelagu93@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/distilledbyangelagu](https://www.linkedin.com/in/distilledbyangelagu/)
-- 🌐 Website: [distilledbyangelagu.co/essays](https://distilledbyangelagu.co/)
+- 🌐 Website: [distilledbyangelagu.co](https://distilledbyangelagu.co/)
