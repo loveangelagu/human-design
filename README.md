@@ -27,8 +27,8 @@ A beautiful, interactive AI chatbot designed to help users explore Human Design 
 ## Future Development
 
 ### Phase 1: ChatGPT API Integration
-- [ ] Set up environment variables for API keys
-- [ ] Implement actual ChatGPT API calls
+- [x] Set up environment variables for API keys
+- [x] Implement actual ChatGPT API calls
 - [ ] Add conversation context management
 - [ ] Implement message history persistence
 
