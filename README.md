@@ -1,7 +1,6 @@
 # 🤖💫 Human Design AI Guide 💬🌈
 
-A beautiful, interactive AI chatbot designed to help users explore **Human Design principles** and their personal journey.  
-Built with **React** and powered by the **ChatGPT API**, this app provides type-specific insights and actionable guidance in real time.
+A beautiful, interactive AI chatbot designed to help users explore **Human Design** principles and their personal journey.  
 
 <p align="center">
   <img src="./screenshots/1.png" width="500" style="margin-right: 10px;" />
