@@ -8,6 +8,19 @@ const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [currentInput, setCurrentInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [userType, setUserType] = useState('');
+  const [showChat, setShowChat] = useState(false);
+
+  const handleTypeChange = (e) => {
+    setUserType(e.target.value);
+  };
+
+  const handleContinue = () => {
+    if (userType) {
+      localStorage.setItem('userType', userType);
+      setShowChat(true);
+    }
+  };
 
   const handleSendMessage = async () => {
     if (!currentInput.trim()) return;
@@ -24,8 +37,8 @@ const ChatBot = () => {
     setIsTyping(true);
 
     try {
-      // Use the chat service for future API integration
-      const response = await chatService.sendMessage(currentInput);
+      // Use the chat service with user type for personalized responses
+      const response = await chatService.sendMessage(currentInput, userType);
       const botMessage = {
         id: Date.now() + 1,
         text: response.text,
@@ -54,6 +67,51 @@ const ChatBot = () => {
     }
   };
 
+  if (!showChat) {
+    return (
+      <div className="chat-container">
+        <div className="sparkles">
+          <div className="sparkle"></div>
+          <div className="sparkle"></div>
+          <div className="sparkle"></div>
+          <div className="sparkle"></div>
+        </div>
+        
+        <div className="welcome-badge">✨ Your Human Design Buddy ✨</div>
+        
+        <BotAvatar />
+        
+        <div className="chat-content">
+          <h1 className="greeting-text">Hey there, beautiful soul! 🌸</h1>
+          <p className="question-text">Which part of your journey has you stumblin'?</p>
+        </div>
+        
+        <div className="type-selection">
+          <select
+            value={userType}
+            onChange={handleTypeChange}
+            className="type-dropdown"
+          >
+            <option value="">Choose your Human Design type...</option>
+            <option value="Manifestor">Manifestor</option>
+            <option value="Manifesting Generator">Manifesting Generator</option>
+            <option value="Generator">Generator</option>
+            <option value="Projector">Projector</option>
+            <option value="Reflector">Reflector</option>
+          </select>
+          
+          <button 
+            onClick={handleContinue}
+            className={`continue-button ${userType ? 'enabled' : 'disabled'}`}
+            disabled={!userType}
+          >
+            Continue Your Journey ✨
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="chat-container">
       <div className="sparkles">
@@ -71,14 +129,18 @@ const ChatBot = () => {
         {messages.length === 0 ? (
           <>
             <h1 className="greeting-text">Hey there, beautiful soul! 🌸</h1>
-            <p className="question-text">Which part of your journey has you stumblin'?</p>
+            <p className="question-text">As a {userType}, which part of your journey has you stumblin'?</p>
           </>
         ) : (
           <div className="messages-container">
             {messages.map(message => (
               <div key={message.id} className={`message ${message.sender}`}>
                 <div className="message-content">
-                  {message.text}
+                  {message.text.split('\n').map((paragraph, index) => (
+                    <p key={index} className="message-paragraph">
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
                 <div className="message-timestamp">
                   {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}

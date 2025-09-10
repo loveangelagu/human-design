@@ -6,6 +6,7 @@
   box-shadow: 0 20px 40px rgba(255, 183, 167, 0.3);
   width: 100%;
   max-width: 500px;
+  min-width: 500px;
   padding: 40px 30px;
   text-align: center;
   backdrop-filter: blur(10px);
@@ -57,6 +58,82 @@
   border: 1px solid rgba(255, 183, 167, 0.3);
 }
 
+.type-selection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.type-dropdown {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid #FFB5A7 !important;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #8B5A3C;
+  outline: none !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+}
+
+.type-dropdown:focus {
+  border: 3px solid #FF9A8B !important;
+  box-shadow: 0 0 20px rgba(255, 154, 139, 0.3) !important;
+  background: rgba(255, 255, 255, 0.95);
+  outline: none !important;
+}
+
+.type-dropdown:active {
+  border: 3px solid #FF9A8B !important;
+  outline: none !important;
+}
+
+.type-dropdown:focus-visible {
+  outline: none !important;
+  border: 3px solid #FF9A8B !important;
+}
+
+.type-dropdown:hover {
+  border-color: #FF9A8B;
+}
+
+.continue-button {
+  width: 100%;
+  background: linear-gradient(135deg, #FF9A8B, #FFB5A7);
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 154, 139, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.continue-button.enabled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(255, 154, 139, 0.4);
+  background: linear-gradient(135deg, #FF8A80, #FF9A8B);
+}
+
+.continue-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .chat-content {
   margin-bottom: 20px;
 }
@@ -85,6 +162,8 @@
   text-align: left;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
+  min-width: 100%;
 }
 
 .message {
@@ -111,6 +190,15 @@
 .message-content {
   margin-bottom: 4px;
   line-height: 1.4;
+}
+
+.message-paragraph {
+  margin: 0 0 8px 0;
+  line-height: 1.5;
+}
+
+.message-paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .message-timestamp {
@@ -151,6 +239,7 @@
     padding: 30px 20px;
     margin: 10px;
     max-width: calc(100vw - 20px);
+    min-width: calc(100vw - 20px);
   }
   
   .greeting-text {
