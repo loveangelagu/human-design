@@ -1,6 +1,6 @@
-# 🤖💫 Human Design AI Guide 💬🌈
+# 🤖💫 Human Design AI Guide 💬🌈  🌙🔮
 
-A beautiful, interactive AI chatbot designed to help users explore **Human Design** principles and their personal journey.  
+A beautiful, interactive AI chatbot designed to help users with their daily struggles by giving specific & sound advice based on their human design type. 
 
 <p align="center">
   <img src="./screenshots/1.png" width="500" style="margin-right: 10px;" />
