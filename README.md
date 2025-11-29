@@ -73,8 +73,8 @@ This project was built using Cursor AI for rapid development. To continue develo
 I’m always open to feedback, collaborations, or new opportunities. Drop me a message or just say hi!
 
 - 📩 Email: [angelagu93@gmail.com](mailto:angelagu93@gmail.com)
-- 💼 LinkedIn: [linkedin.com/in/distilledbyangelagu](https://www.linkedin.com/in/distilledbyangelagu/)
-- 🌐 Website: [distilledbyangelagu.co](https://distilledbyangelagu.co/)
+- 💼 LinkedIn: [linkedin.com/in/distilledbyangelagu](https://www.linkedin.com/in/loveangelagu/)
+- 🌐 Website: [distilledbyangelagu.co](https://loveangelagu.me/)
 
 
 
